@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>jscount :- count by clicking in any webpage</title>
+	<meta name="description" content="" />
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="../../../../assets/css/style.css?v=1a4ee8d691" />
+
+	<link rel="canonical" href="http://10.0.0.109:2368/2015/09/20/jscount-count-by-clicking-in-any-webpage/" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="bindingofissac" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="jscount :- count by clicking in any webpage" />
+    <meta property="og:description" content="I always had this problem, when I wanted to count something in some website it was difficult to keep track of things with all the colors and scrolling Not Anymore by copying this code to chrome console i can keep..." />
+    <meta property="og:url" content="http://10.0.0.109:2368/2015/09/20/jscount-count-by-clicking-in-any-webpage/" />
+    <meta property="article:published_time" content="2015-09-20T16:51:12.308Z" />
+    <meta property="article:modified_time" content="2015-09-20T16:56:16.445Z" />
+    <meta property="article:tag" content="js" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="jscount :- count by clicking in any webpage" />
+    <meta name="twitter:description" content="I always had this problem, when I wanted to count something in some website it was difficult to keep track of things with all the colors and scrolling Not Anymore by copying this code to chrome console i can keep..." />
+    <meta name="twitter:url" content="http://10.0.0.109:2368/2015/09/20/jscount-count-by-clicking-in-any-webpage/" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "bindingofissac",
+    "author": {
+        "@type": "Person",
+        "name": "Vivek",
+        "url": "http://10.0.0.109:2368/author/vivek",
+        "sameAs": null,
+        "description": null
+    },
+    "headline": "jscount :- count by clicking in any webpage",
+    "url": "http://10.0.0.109:2368/2015/09/20/jscount-count-by-clicking-in-any-webpage/",
+    "datePublished": "2015-09-20T16:51:12.308Z",
+    "dateModified": "2015-09-20T16:56:16.445Z",
+    "keywords": "js",
+    "description": "I always had this problem, when I wanted to count something in some website it was difficult to keep track of things with all the colors and scrolling Not Anymore by copying this code to chrome console i can keep..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7" />
+    <link rel="alternate" type="application/rss+xml" title="bindingofissac" href="http://10.0.0.109:2368/rss/" />
+</head>
+
+<body class="post-template tag-js">
+	
+	<nav id="menu">
+	<a class="close-button">Close</a>
+	<div class="nav-wrapper">
+		<p class="nav-label">Menu</p>
+		<ul>
+			<li class="nav-home" role="presentation"><a href="http://10.0.0.109:2368/">Home</a></li>
+			<li class="nav-github" role="presentation"><a href="https://github.com/bindingofisaac">Github</a></li>
+			<li class="nav-rss"><a href="http://10.0.0.109:2368/rss/"><i class="ic ic-rss"></i> Subscribe</a></li>
+		</ul>
+	</div>
+</nav>
+	
+	<section id="wrapper">
+		<a class="hidden-close"></a>
+		
+
+<div class="progress-container">
+	<span class="progress-bar"></span>
+</div>
+
+<header id="post-header">
+	<div class="inner">
+		<nav id="navigation">
+			<span id="home-button" class="nav-button">
+				<a class="home-button" href="http://10.0.0.109:2368" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+			</span>
+			<span id="menu-button" class="nav-button">
+				<a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+			</span>
+		</nav>
+		<h1 class="post-title">jscount :- count by clicking in any webpage</h1>
+		<span class="post-meta"><a href="../../../../author/vivek/index.html">Vivek</a> | <time datetime="2015-09-20">20 Sep 2015</time></span>
+		
+	</div>
+</header>
+
+<main class="content" role="main">
+	<article class="post tag-js">
+		<div class="inner">
+		
+			<section class="post-content">
+				<p>I always had this problem, when I wanted to count something in some website it was difficult to keep track of things with all the colors and scrolling <mark>Not Anymore</mark> by copying this code to <em>chrome console</em> i can keep track of my count.  </p>
+
+<pre><code>var qwerty_wierd_counter = 1;  
+document.addEventListener('click', function(e){  
+   var div = document.createElement('div');
+   var val = document.createTextNode(qwerty_wierd_counter);
+
+   div.appendChild(val);
+
+   div.style.position = 'absolute';
+   div.style.left     =  e.pageX + 'px';
+   div.style.top      =  e.pageY + 'px';
+   div.style.color    =  'red';
+
+   document.body.appendChild(div);
+   qwerty_wierd_counter++; 
+});
+</code></pre>
+
+<p><a href="http://i.imgur.com/1JW4TTd.gif"><img src="http://i.imgur.com/1JW4TTd.gif" alt="" title="" /></a></p>
+
+<p>so, <strong>73</strong> easy problems in leetcode. </p>
+			</section>
+			
+			<section class="post-info">
+				
+				<div class="post-share">
+					<a class="twitter" href="https://twitter.com/share?text=jscount :- count by clicking in any webpage&url=http://10.0.0.109:2368/2015/09/20/jscount-count-by-clicking-in-any-webpage/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+						<i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+					</a>
+					<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://10.0.0.109:2368/2015/09/20/jscount-count-by-clicking-in-any-webpage/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+						<i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+					</a>
+					<a class="googleplus" href="https://plus.google.com/share?url=http://10.0.0.109:2368/2015/09/20/jscount-count-by-clicking-in-any-webpage/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+						<i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
+					</a>
+					<div class="clear"></div>
+				</div>
+				
+				<aside class="post-tags">
+					<a href="../../../../tag/js/index.html">js</a>
+				</aside>
+				
+				<div class="clear"></div>
+				
+				<aside class="post-author">
+					<div class="post-author-bio">
+						<h4 class="post-author-name"><a href="../../../../author/vivek/index.html">Vivek</a></h4>
+					</div>
+					<div class="clear"></div>
+				</aside>
+
+			</section>
+			
+
+			<section class="post-comments">
+				<a id="show-disqus" class="post-comments-activate">Show Comments</a>
+			    <div id="disqus_thread"></div>
+
+			</section>
+
+			<aside class="post-nav">
+					<a class="post-nav-prev" href="../../12/how-to-make-youtube-repeat-videos/index.html">
+						<section class="post-nav-teaser">
+							<i class="ic ic-arrow-right"></i>
+							<h2 class="post-nav-title">How to make youtube repeat videos</h2>
+							<p class="post-nav-excerpt">Trying to make youtube videos repeat. something like listeonrepeat but finally i&hellip;</p>
+						</section>
+					</a>
+				<div class="clear"></div>
+			</aside>
+
+
+		</div>
+	</article>
+</main>
+
+
+		<div id="body-class" style="display: none;" class="post-template tag-js"></div>
+	
+		<footer id="footer">
+			<div class="inner">
+				<section class="credits">
+					<span class="credits-theme">Theme <a href="https://github.com/zutrinken/attila">Attila</a> by <a href="http://zutrinken.com" rel="nofollow">zutrinken</a></span>
+					<span class="credits-software">Published with <a href="http://ghost.org">Ghost</a></span>
+				</section>
+			</div>
+		</footer>
+	</section>
+
+	<script type="text/javascript" src="../../../../assets/js/script.js?v=1a4ee8d691"></script>
+
+	
+
+</body>
+</html>
